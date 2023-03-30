@@ -16,7 +16,7 @@
  */
 
 /**
- * The YCSB binding for <a href="https://zookeeper.apache.org/">ZooKeeper</a>.
+ * The YCSB binding for <a href="https://etcd.io">etcd</a>.
  */
 package site.ycsb.db.zookeeper;
 

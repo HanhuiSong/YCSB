@@ -41,7 +41,11 @@ import site.ycsb.StringByteIterator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+/**
+ * YCSB binding for <a href="https://etcd.io">etcd</a>.
+ *
+ * See {@code etcd/README.md} for details.
+ */
 public class EtcdClient extends DB {
 
   public void init() throws DBException {
