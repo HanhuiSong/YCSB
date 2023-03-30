@@ -14,7 +14,7 @@
  * permissions and limitations under the License. See accompanying
  * LICENSE file.
  * <p>
- * ZooKeeper client binding for YCSB.
+ * etcd client binding for YCSB.
  * <p>
  */
 
@@ -42,8 +42,34 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-public class EtcdClient {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
+public class EtcdClient extends DB {
+
+  public void init() throws DBException {
+    Properties props = getProperties();
+  }
+
+  @Override
+  public Status read(String table, String key, Set<String> fields, Map<String, ByteIterator> result) {
+    return null;
+  }
+
+  @Override
+  public Status scan(String table, String startkey, int recordcount, Set<String> fields, Vector<HashMap<String, ByteIterator>> result) {
+    return null;
+  }
+
+  @Override
+  public Status update(String table, String key, Map<String, ByteIterator> values) {
+    return null;
+  }
+
+  @Override
+  public Status insert(String table, String key, Map<String, ByteIterator> values) {
+    return null;
+  }
+
+  @Override
+  public Status delete(String table, String key) {
+    return null;
   }
 }
