@@ -17,4 +17,13 @@ LICENSE file.
 
 ## Quick Start
 
- This section describes how to run YCSB on etcd.
+ This section describes how to run YCSB on etcd.</br>
+ To run ycsb with redis for example:</br>
+ ```
+ bin/ycsb.sh run basic -P workloads/workloada
+ ```
+ To start etcd, run : 
+  ```
+  /tmp/etcd-download-test/etcd
+  ```
+    
